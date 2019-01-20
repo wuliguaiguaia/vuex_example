@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+    <script src="https://unpkg.com/vuex"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <button @click="decrease">-</button>
+        {{count}}
+        <button @click="add">+</button>
+        <h1>
+            This count is {{type}}
+        </h1>
+        <button @click="changeType">change is even</button>
+        <br>
+        <button @click="syncAction">sync decrease</button>
+        <h3>最近五次记录：{{recentHis}}</h3>
+        {{histories}}
+    </div>
+</body>
+
+</html>
